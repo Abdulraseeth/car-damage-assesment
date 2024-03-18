@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oxygen|Jost|Josefin+Sans|Questrial">
+    <link rel="stylesheet" href="./css/result.css">
+    
+
+</head>
+<body>
+    <div class="top1"></div>
+    <div class="top2"></div>
+    <div class="title"><h2>Car Damage Assessment and Cost Estimation using VGG16</h2></div>
+    <div class="menu">
+        <a href="index.html" style="color: rgb(255, 255, 255);text-decoration: none;font-size: 20px;">Home</a>
+
+        <a href="logout.html" style="color:  rgb(255, 255, 255);text-decoration: none;padding-left: .25cm;font-size: 20px;">Logout</a>
+    </div>
+    <br><br>
+
+      <p style="font-size: 30px;text-align: center; "> {{ prediction }} </p> 
+      <div style="text-align: center;">
+      <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image" height="256"></div>
+    <div class="but"><br>  <a href="prediction.html"><button>Go back to prediction page</button></a></div>
+    </body>
+    <div class="footer2"><p style="padding-top: 0.55cm;color: rgb(255, 255, 255);text-align: center;">Copyright &#169; 2023. All Rights Reserved.</p><p style="color: rgb(255, 255, 255);margin-left: 24.5cm;margin-top: -1.3cm;">For any feedbacks:<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%6D%6F%68%61%6D%65%64%75%73%6D%61%6E%6A%62%61%2E%75%67%31%39%2E%63%73%40%66%72%61%6E%63%69%73%78%61%76%69%65%72%2E%61%63%2E%69%6E" target="_blank"><i class="fa fa-envelope" style="font-size:24px;margin-left: .5cm;padding-top: .1cm;"></i></a><a href="https://www.linkedin.com/in/mohamed-usman-j-b-a-7131ab228/"target="_blank"><i class="fa fa-linkedin" style="font-size:24px;margin-left: .5cm;padding-top: .2cm;"></i></a></p></div>
+<div class="footer1"></div>
+    </html>

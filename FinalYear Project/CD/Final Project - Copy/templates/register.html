@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oxygen|Jost|Josefin+Sans|Questrial">
+    <link rel="stylesheet" href="./css/register.css">
+    
+<script>
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("psw");
+    var passwordToggleIcon = document.querySelector(".password-toggle-icon i");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      passwordToggleIcon.classList.remove("fa-eye");
+      passwordToggleIcon.classList.add("fa-eye-slash");
+    } else {
+      passwordInput.type = "password";
+      passwordToggleIcon.classList.remove("fa-eye-slash");
+      passwordToggleIcon.classList.add("fa-eye");
+    }
+  }
+</script>
+</head>
+<body>
+    <div class="top1"><h2 style="color: white;text-align: left;margin-left: 0.5cm;padding-top: 1.04cm;">Car Damage Assessment and Cost Estimation using VGG16</h2></div>
+    <div class="top2"></div>
+    <div class="menu">
+        <a href="index.html" style="color: rgb(255, 255, 255);text-decoration: none;font-size: 20px;">Home</a>
+        <a href="login.html" style="color:  rgb(255, 255, 255);text-decoration: none;padding-left: .25cm;font-size: 20px;">Login</a>
+    </div>
+    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
+    <div class="register">
+      <form action="{{ url_for('afterreg') }}" method="post">
+          <input type="text" name="Name" placeholder="Enter Name" required><br><br>
+          <input type="email" name="email" placeholder="Enter Email ID " required><br>
+          <div class="paswcontainer">
+          <input type="password" name="password" id="psw" placeholder="Enter Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one symbol, one uppercase and lowercase letter, and at least 8 or more characters"><span class="password-toOggle-icon" onclick="togglePasswordVisibility()"><i class="fa fa-eye"></i></span>
+        </div>
+        <br>
+          <input type="submit" value="Register">
+        </form>
+       <p>
+        <!-- <b> {{pred}}</b></p> -->
+      </div>
+<p>Already have an account? <a href="login.html">Login</a></p>
+</body>
+<div class="footer2"><p style="padding-top: 0.55cm;color: rgb(255, 255, 255);">Copyright &#169; 2024. All Rights Reserved.</p></div>
+<div class="footer1"></div>
+</html>

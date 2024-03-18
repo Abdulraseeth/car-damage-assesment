@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="..." crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+    <title>Result Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* background-image: url(assets/bg.jpg); */
+            background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+            /* background: linear-gradient(115deg, #004ff9, #000000); */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        nav {
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-family: "Kalnia", serif;
+            align-items: center;
+        }
+        p{
+            font-family: "Poppins", serif;
+            color: white;
+
+        }
+
+        h2 {
+            font-family: "Kalnia", serif;
+        }
+
+        h5 {
+            color: rgb(250, 250, 250);
+        }
+
+        .menu {
+            font-size: 20px;
+            padding: 7px;
+            float: right;
+            margin-right: .009cm;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu a:hover {
+            text-decoration: none;
+            color: rgb(52, 52, 228);
+        }
+
+        .result-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .result-text {
+            font-size: 30px;
+        }
+
+        .uploaded-image {
+            margin-top: 20px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+
+        .btn-link:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        footer {
+            -webkit-backdrop-filter: blur(8px);
+            font-family: "Kalnia", serif;
+            backdrop-filter: blur(8px);
+        }
+
+        .fab {
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- navbar sectiom -->
+    <nav>
+        <div class="title">
+            <h5>AI Powered Assessing Vehicle damage and predicting repair costs</h5>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home |</a>
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+    <!-- navbar section End -->
+
+    <!-- Predicted image here -->
+    
+
+    <div class="container">
+        <div class="result-container">
+            <p class="result-text">{{ prediction }}</p>
+            <div class="uploaded-image">
+                <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image"
+                    class="img-fluid" height="256">
+            </div>
+            <div class="button-container">
+                <a href="prediction.html" class="btn btn-primary">Go back to prediction page</a>
+            </div>
+        </div>
+    </div>
+    <!-- Prediction end  -->
+
+    <!-- Footer Section begin -->
+    <footer class="text-center">
+        <!-- Grid container -->
+        <div class="container pt-1">
+            <section class="mb-1">
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.781); color: white;">
+            © 2024 Copyright : abdulraseeth04@gmail.com
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>

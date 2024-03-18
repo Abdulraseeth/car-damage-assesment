@@ -1,0 +1,140 @@
+
+.top1{
+    height: 0.6cm;
+    background-color: rgb(0, 0, 0);
+    margin-top: -0.65cm;
+    margin-left: -0.202cm;
+    width: 101.01%;
+}
+.top2{
+    height: 1.5cm;
+    margin-top: cm;
+    background-color: rgb(39, 38, 38);
+    margin-left: -0.202cm;
+    width: 101.01%;
+}
+.menu{
+    font-family: Jost;
+    padding: 7px;
+    float:right;
+    margin-top: -1.35cm;
+    margin-right: .009cm;
+}
+h2{
+  font-family: Josefin Sans;
+  font-size: 29.5px;
+    font-weight: lighter;
+}
+.register{
+    margin-top: .5cm;
+}
+input[type=text], select {
+    font-family: Questrial;
+    display: block;
+    width: 50%;
+    font-size: 15px;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=email], select {
+    width: 50%;
+    font-size: 15px;
+    font-family: Questrial;
+    display: block;
+    padding: 12px 20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -.5cm;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+input[type=password], select {
+    display: block;
+    font-size: 15px;
+    font-family: Questrial;
+    width: 50%;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    display: block;
+    font-size: 18px;
+    width: 30%;
+    background-color: #4CAF50;
+    font-family: Questrial;
+    color: white;
+    padding: 14px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+img{
+    display: block;
+    height:150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5cm;
+}
+p{
+text-align: center;
+}
+body{
+  font-family: Questrial;
+}
+.footer1{
+    margin-top: 0.3cm;
+    height: 0.6cm;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: -0.3cm;
+    margin-left: -0.202cm;
+    width: 101.01%;
+}
+a:link, a:visited
+{color: gray;}
+.footer2{
+    margin-top: 3cm;
+    height: 1.7cm;
+    width: 101.01%;
+    margin-left: -0.202cm; 
+    margin-bottom: -0.3cm;
+    background-color: rgb(39, 38, 38);
+}
+.password-toggle-icon {
+  position: absolute;
+  left:29.5cm;
+  top: 55.8%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.password-toggle-icon i {
+  font-size: 1.2rem;
+}
+
+.paswcontainer{
+  position: relative;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 27%;
+  left: 71%;
+  color: grey;
+}

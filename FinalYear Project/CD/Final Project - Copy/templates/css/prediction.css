@@ -1,0 +1,101 @@
+
+.top1{
+    height: 0.6cm;
+    background-color: rgb(0, 0, 0);
+    margin-top: -0.7cm;
+    margin-left: -0.202cm;
+    width: 101.01%;
+}
+.top2{
+    height: 1.5cm;
+    background-color: rgb(39, 38, 38);
+    margin-left: -0.202cm;
+    width: 101.01%;
+}
+.menu{
+    padding: 7px;
+    float:right;
+    font-family: Jost;
+    margin-top: -1.35cm;
+    margin-right: .009cm;
+}
+input[type=submit] {
+    font-family: Questrial;
+    font-size: 18px;
+    display: block;
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+p{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.upload{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+input[type=text], select {
+    font-family: Questrial;
+    display: block;
+    width:30%;
+    font-size: 15px;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=file]{
+    display: block;
+    width: 20%;
+    font-family: Questrial;
+    background-color: #5b6b5c;
+    color: white;
+    padding: 14px 7px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer1{
+    margin-top: 0.3cm;
+    height: 0.6cm;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: -0.3cm;
+    margin-left: -0.202cm;
+    width: 101.01%;
+}
+.footer2{
+    margin-top: 6.3cm;
+    height: 1.7cm;
+    width: 101.01%;
+    margin-left: -0.202cm; 
+    margin-bottom: -0.3cm;
+    background-color: rgb(39, 38, 38);
+}
+body{
+    font-family: Questrial;
+}
+h2{
+    color: rgb(250, 250, 250);
+    font-size: 29.5px;
+    font-weight: lighter;
+    font-family: Josefin Sans;
+}
+a:link, a:visited
+{color: gray;}
